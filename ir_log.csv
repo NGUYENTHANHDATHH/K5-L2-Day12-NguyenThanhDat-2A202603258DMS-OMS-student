@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"[XÁC NHẬN] bên trong ghế trẻ em ghế rear_left không phân biệt được trống hay có vật trên IR-sim, RGB thấy trống",child_seat.occupied,"IR ghi unknown, RGB ghi no; không chép giá trị từ RGB sang IR"
+S05_ir,IR_sim,"[XÁC NHẬN] RGB cảnh tối không thấy bên trong ghế trẻ em rear_right, IR-sim thấy rõ ghế trống",child_seat.occupied,"IR ghi no, RGB giữ unknown; không suy RGB từ IR"
+S06_ir,IR_sim,"[XÁC NHẬN] RGB cảnh tối chỉ nhận ra ghế trẻ em; IR-sim thấy thêm ghế em bé rear_left và túi rear_middle",infant_seat / object (box),"IR có 3 box, RGB chỉ 1 box; kiểm lại RGB với brightness/contrast, chỉ gán cái thấy được trên từng ảnh"
+D03,real_IR,"[XÁC NHẬN] phản xạ LED trên tròng kính cận che vùng mắt, không thấy khe mí",eye_left / eye_right,"ghi unknown, không ghi closed; điểm mắt face13 bật occluded"
+D05,real_IR,"[XÁC NHẬN] phản xạ LED trên tròng kính cận che cả hai mắt",eye_left / eye_right,"ghi unknown; gaze_zone chỉ dựa vào hướng đầu"
+D02,real_IR,"[XÁC NHẬN] vùng mắt quá tối/bị che, không xác định được kính và trạng thái mắt",eye_left / eye_right / glasses,"cả ba ghi unknown; điểm mắt face13 bật occluded hoặc outside"
